@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Happy Valentine's Day 
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+    <style>
+      /* add some basic styles to the page */
+      body {
+        background-color: pink;
+        text-align: center;
+      }
+      
+      h1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+      }
+      
+      button {
+        background: #d934c6;
+  background-image: -webkit-linear-gradient(top, #d934c6, #5eadd1);
+  background-image: -moz-linear-gradient(top, #d934c6, #5eadd1);
+  background-image: -ms-linear-gradient(top, #d934c6, #5eadd1);
+  background-image: -o-linear-gradient(top, #d934c6, #5eadd1);
+  background-image: linear-gradient(to bottom, #d934c6, #5eadd1);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 31px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+      }
+      button:hover{
+        background: #e62e78;
+  background-image: -webkit-linear-gradient(top, #e62e78, #f02222);
+  background-image: -moz-linear-gradient(top, #e62e78, #f02222);
+  background-image: -ms-linear-gradient(top, #e62e78, #f02222);
+  background-image: -o-linear-gradient(top, #e62e78, #f02222);
+  background-image: linear-gradient(to bottom, #e62e78, #f02222);
+  text-decoration: none;
+      }
+      
+      #heart-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+      .heart {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50% 50% 0 0;
+  transform: rotate(45deg);
+  animation: shower 2s ease-out forwards;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+.heart::before {
+  top: -5px;
+  left: 0;
+  border-radius: 50% 0 0 0;
+  transform: rotate(-45deg);
+}
+
+.heart::after {
+  top: 0;
+  left: -5px;
+  border-radius: 0 50% 0 0;
+  transform: rotate(-45deg);
+}
+      
+      @keyframes shower {
+        from {
+          transform: translate(0, 0) rotate(45deg);
+          opacity: 1;
+        }
+        to {
+          transform: translate(200px, 600px) rotate(45deg);
+          opacity: 0;
+        }
+      }
+      
+      .carousel img {
+        width:200px;
+        position: relative;
+        top: 30px;        
+      }
+      
+      h5{
+        text-align: left;
+        font-size: large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+ 
+    </style>
+  </head>
+  <body>
+    <h1>Happy Valentine's Day my babygirl!</h1>
+    <h3> ILOVEYOUSOMUCH ❤️</h3>
+    <button onclick="showHearts()">Shower Hearts</button>
+    <div id="heart-container"></div>
+    <div class="carousel">
+      <img src="IMG_2992.jpg" alt="Image 1">
+      <img src="IMG_3003.JPG" alt="Image 2">
+      <img src="IMG_3304.JPG" alt="Image 3">
+      <img src="IMG_9425.jpg" alt="Image 3">
+      <img src="7DB09301-C15E-4982-8E2F-5FB4E9AD0640.jpg" alt="">
+      <img src="430123B2-B950-4911-ACD9-BCFDA6331AF8.jpg" alt="">
+      <img src="B243A3CC-8D53-4CFF-AF16-8D361C1245FD.jpg" alt="">
+      <img src="IMG_6134.JPG" alt="">
+      <img src="IMG_8461.JPG" alt="">
+    </div>
+    <h5>swipe left to see more of our cute pictures :D</h5>
+<h3>Made by your Momo with Love❤️</h3>
+    <script src="index.js"></script>
+  </body>
+</html>
